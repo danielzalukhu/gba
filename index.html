@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Berea Anugerah</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- OwlCarousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">Berea Anugerah</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Visi & Misi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Acara</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sejarah</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Lokasi</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Home Section -->
+    <section class="home d-flex align-items-center">
+      <div class="effect-wrap">
+        <i class="fas fa-plus effect effect-1"></i>
+        <i class="fas fa-plus effect effect-2"></i>
+        <i class="fas fa-circle-notch effect effect-3"></i>
+      </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7">
+            <div class="home-text">
+              <h1>Gerakan Kembali Kepada Alkitab</h1>
+              <p class="text-justify">
+                "Orang-orang Yahudi di kota itu lebih baik hatinya dari pada orang-orang Yahudi di Tesalonika, karena mereka <span> menerima firman itu dengan segala kerelaan hati </span> dan
+                <span>setiap hari mereka menyelidiki Kitab Suci </span> untuk mengetahui, apakah semuanya itu benar demikian." <br />
+                <span>(Kisah Para Rasul 17:11)</span>
+              </p>
+              <div class="home-btn">
+                <audio id="myAudio">
+                  <source src="audio/hymn.ogg" type="audio/ogg" />
+                  <source src="audio/hymn.mp3" type="audio/mpeg" />
+                </audio>
+                <button onclick="playAudio()" type="button" class="btn btn-1">Hymn Berea</button>
+
+                <button type="button" class="btn btn-1 video-play-btn">
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 text-center">
+            <div class="home-img">
+              <div class="circle"></div>
+              <img src="img/app-screenshots/banner.jpg" alt="Apps Prototype" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Home Section -->
+
+    <!-- Video PopUp -->
+    <div class="video-popup">
+      <div class="video-popup-inner">
+        <i class="fas fa-times video-popup-close"></i>
+        <div class="iframe-box">
+          <iframe id="player-1" src="https://www.youtube.com/embed/Tqhg-PDtCSk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- End Video PopUp -->
+
+    <!-- 5 Kewajiban Orang Kudus -->
+    <section class="obligations section-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title">
+              <h2>5 Kewajiban <span>Orang Kudus</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="owl-carousel obligations-carousel">
+            <div class="obligation-item">
+              <div class="icon"><i class="fas fa-pray"></i></div>
+              <h3>Berdoa</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nesciunt minima ipsa dignissimos officia possimus et perspiciatis incidunt ab. Beatae!"</p>
+            </div>
+            <div class="obligation-item">
+              <div class="icon"><i class="fas fa-percent"></i></div>
+              <h3>Perpuluhan</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim iste ullam doloremque? Atque quis natus et? Repudiandae repellat neque totam.</p>
+            </div>
+            <div class="obligation-item">
+              <div class="icon"><i class="fas fa-church"></i></div>
+              <h3>Hari Tuhan</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus at laboriosam dolor ea harum facere cumque ipsam asperiores. Harum, quos.</p>
+            </div>
+            <div class="obligation-item">
+              <div class="icon"><i class="fas fa-bible"></i></div>
+              <h3>Baca Alkitab</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus at laboriosam dolor ea harum facere cumque ipsam asperiores. Harum, quos.</p>
+            </div>
+            <div class="obligation-item">
+              <div class="icon"><i class="fas fa-volume-up"></i></div>
+              <h3>Beritakan Injil</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus at laboriosam dolor ea harum facere cumque ipsam asperiores. Harum, quos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Kewajiban Orang Kudus -->
+
+    <!-- Spiritual Activities -->
+    <section class="activity section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-5 d-flex align-items-center justify-content-center">
+            <div class="activity-img">
+              <img src="img/app-screenshots/2.png" alt="One of the activity" />
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-7">
+            <div class="section-title">
+              <h2>Kegiatan <span>Rohani</span></h2>
+            </div>
+            <div class="activity-text">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, optio? Sed doloribus, architecto cupiditate voluptatum unde excepturi totam praesentium ipsam.</p>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="activity-item style-1">
+                    <h3>Baptisan Kudus</h3>
+                    <span>1700 Jiwa++</span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="activity-item style-2">
+                    <h3>Pernikahan Kudus</h3>
+                    <span>Lorem ipsum</span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="activity-item style-3">
+                    <h3>RetReat & Fellowship</h3>
+                    <span>Setiap Tahun</span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="activity-item style-4">
+                    <h3>Komsel Online</h3>
+                    <span>Setiap Jumat</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Spiritual Activities -->
+
+    <!-- Galeri -->
+    <section class="galleries section-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title">
+              <h2>Galeri <span>Berea Anugerah</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="owl-carousel screenshots-carousel">
+            <div class="screenshot-item">
+              <img src="img/app-screenshots/1.png" alt="" />
+            </div>
+            <div class="screenshot-item">
+              <img src="img/app-screenshots/2.png" alt="" />
+            </div>
+            <div class="screenshot-item">
+              <img src="img/app-screenshots/3.png" alt="" />
+            </div>
+            <div class="screenshot-item">
+              <img src="img/app-screenshots/1.png" alt="" />
+            </div>
+            <div class="screenshot-item">
+              <img src="img/app-screenshots/2.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Galeri -->
+
+    <!-- Download App Section -->
+    <section class="app-download section-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title">
+              <h2>Download <span>App</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="app-download-item">
+              <i class="fab fa-google-play"></i>
+              <h3>Google Play</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum accusamus tempore voluptates ea, saepe sapiente excepturi facere ipsum eaque sequi.</p>
+              <a href="#" class="btn btn-2">Download Now</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="app-download-item">
+              <i class="fab fa-apple"></i>
+              <h3>Apple Store</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum accusamus tempore voluptates ea, saepe sapiente excepturi facere ipsum eaque sequi.</p>
+              <a href="#" class="btn btn-2">Download Now</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="app-download-item">
+              <i class="fab fa-windows"></i>
+              <h3>Windows</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum accusamus tempore voluptates ea, saepe sapiente excepturi facere ipsum eaque sequi.</p>
+              <a href="#" class="btn btn-2">Download Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Download App Section -->
+
+    <!-- History GBA -->
+    <section class="history-gba section-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title">
+              <h2>Sejarah <span>Berea Anugerah</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="history-gba-item line-right">
+              <div class="step">2015</div>
+              <h3>Tangerang</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate magni vitae nam placeat itaque aliquid neque praesentium veniam atque nisi!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="history-gba-item line-right">
+              <div class="step">2016</div>
+              <h3>Surabaya</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate magni vitae nam placeat itaque aliquid neque praesentium veniam atque nisi!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="history-gba-item line-right">
+              <div class="step">2017</div>
+              <h3>Lombok</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate magni vitae nam placeat itaque aliquid neque praesentium veniam atque nisi!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="history-gba-item">
+              <div class="step">2017</div>
+              <h3>Bali</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate magni vitae nam placeat itaque aliquid neque praesentium veniam atque nisi!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End History GBA -->
+
+    <!-- Profil Pengerja Carousel-->
+    <section class="profile-pengerja section-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title">
+              <h2>Gereja <span>Cabang</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="owl-carousel profile-pengerja-carousel">
+            <div class="profile-pengerja-item">
+              <div class="img-box">
+                <img src="img/testimonial/1.jpg" alt="" />
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aliquid?</p>
+              <h3>Tangerang</h3>
+              <span>Pusat</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="profile-pengerja-item">
+              <div class="img-box">
+                <img src="img/testimonial/2.jpg" alt="" />
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aliquid?</p>
+              <h3>Surabaya</h3>
+              <span>Cabang</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="profile-pengerja-item">
+              <div class="img-box">
+                <img src="img/testimonial/3.jpg" alt="" />
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aliquid?</p>
+              <h3>Lombok</h3>
+              <span>Cabang</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="profile-pengerja-item">
+              <div class="img-box">
+                <img src="img/testimonial/4.jpg" alt="" />
+                <i class="fas fa-quote-right"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aliquid?</p>
+              <h3>Bali</h3>
+              <span>Cabang</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Profil Pengerja -->
+
+    <!-- Pricing Section -->
+    <section class="pricing section-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title">
+              <h2>Pricing <span>Plan</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="pricing-plan">
+              <div class="pricing-header">
+                <h3>Basic</h3>
+              </div>
+              <div class="pricing-price">
+                <span class="currency">Rp</span>
+                <span class="price">99</span>
+                <span class="period">/bulan</span>
+              </div>
+              <div class="pricing-body">
+                <ul>
+                  <li><i class="fas fa-check"></i>5 GB Bandwith</li>
+                  <li><i class="fas fa-check"></i>Free Update</li>
+                  <li><i class="fas fa-check"></i>High Resolution Printing</li>
+                  <li><i class="fas fa-check"></i>Branding</li>
+                  <li><i class="fas fa-check"></i>Great Features</li>
+                </ul>
+              </div>
+              <div class="pricing-footer">
+                <a href="#" class="btn btn-2">Get Started</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="pricing-plan">
+              <div class="pricing-header">
+                <h3>Premium</h3>
+              </div>
+              <div class="pricing-price">
+                <span class="currency">Rp</span>
+                <span class="price">100</span>
+                <span class="period">/bulan</span>
+              </div>
+              <div class="pricing-body">
+                <ul>
+                  <li><i class="fas fa-check"></i>5 GB Bandwith</li>
+                  <li><i class="fas fa-check"></i>Free Update</li>
+                  <li><i class="fas fa-check"></i>High Resolution Printing</li>
+                  <li><i class="fas fa-check"></i>Branding</li>
+                  <li><i class="fas fa-check"></i>Great Features</li>
+                </ul>
+              </div>
+              <div class="pricing-footer">
+                <a href="#" class="btn btn-2">Get Started</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="pricing-plan">
+              <div class="pricing-header">
+                <h3>Ultimate</h3>
+              </div>
+              <div class="pricing-price">
+                <span class="currency">Rp</span>
+                <span class="price">101</span>
+                <span class="period">/bulan</span>
+              </div>
+              <div class="pricing-body">
+                <ul>
+                  <li><i class="fas fa-check"></i>5 GB Bandwith</li>
+                  <li><i class="fas fa-check"></i>Free Update</li>
+                  <li><i class="fas fa-check"></i>High Resolution Printing</li>
+                  <li><i class="fas fa-check"></i>Branding</li>
+                  <li><i class="fas fa-check"></i>Great Features</li>
+                </ul>
+              </div>
+              <div class="pricing-footer">
+                <a href="#" class="btn btn-2">Get Started</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Pricing Section -->
+
+    <!-- Gereja Cabang Card-Box -->
+    <section class="organization-structure section-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title">
+              <h2>Profil <span>Pengerja</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="owl-carousel structure-carousel">
+            <div class="organization-structure-item">
+              <img src="img/team/1.jpg" alt="" />
+              <h3>Andrias Lin</h3>
+              <span>Gembala Sidang</span>
+            </div>
+            <div class="organization-structure-item">
+              <img src="img/team/2.jpg" alt="" />
+              <h3>Manueli Zalukhu</h3>
+              <span>Evangelist</span>
+            </div>
+            <div class="organization-structure-item">
+              <img src="img/team/3.jpg" alt="" />
+              <h3>Hardy Nurmadi</h3>
+              <span>Evangelist</span>
+            </div>
+            <div class="organization-structure-item">
+              <img src="img/team/4.jpg" alt="" />
+              <h3>Albert Aryanto</h3>
+              <span>Evangelist</span>
+            </div>
+            <div class="organization-structure-item">
+              <img src="img/team/5.jpg" alt="" />
+              <h3>Ellisina Rahim</h3>
+              <span>Evangelist</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Gereja Cabang Card-Box -->
+
+    <!-- JQuery JS -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- OwlCarousel JS -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
