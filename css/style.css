@@ -320,19 +320,18 @@ ul {
   position: relative;
 }
 
-/* .home-img .circle {
+.home-img .circle {
   position: absolute;
   z-index: 2;
   height: 400px;
   width: 400px;
-  border: 10px solid rgba(255, 255 255, 0.5);
   border-radius: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-} */
+}
 
-/* .home-img .circle::before {
+.home-img .circle::before {
   content: "";
   position: absolute;
   height: 60px;
@@ -343,7 +342,7 @@ ul {
   top: 10px;
   transform-origin: 90px 200px;
   animation: spin_01 10s linear infinite;
-} */
+}
 
 /* Video PopUp Section */
 .video-popup {
@@ -1053,10 +1052,6 @@ ul {
 }
 
 @media (max-width: 575px) {
-  .owl-carousel {
-    padding: 0 50px;
-  }
-
   .home-text h1 {
     font-size: 30px;
   }
