@@ -28,6 +28,18 @@ body {
   line-height: 1.5;
 }
 
+body.dark {
+  background-color: var(--bg-dark);
+  --black-100: var(--bg-dark);
+  --black-000: var(--bg-dark);
+  --main-to-dark-color: var(--bg-dark);
+  --dark-to-main-color: var(--main-color);
+  --shadow-black-100: var(--shadow-black-300);
+  --black-alpha-100: rgba(255, 255, 255, 0.05);
+  --black-900: #ffffff;
+  --black-400: #bbbbbb;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -123,6 +135,16 @@ ul {
   }
 }
 
+@keyframes zoomInOut_01 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
 .effect-wrap .effect {
   position: absolute;
   z-index: 1;
@@ -195,6 +217,30 @@ ul {
 
 /* End Utility */
 
+/* Preloader */
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2100;
+  background-color: var(--main-to-dark-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preloader span {
+  display: block;
+  height: 60px;
+  width: 60px;
+  background-color: var(--dark-to-main-color);
+  border-radius: 50%;
+  animation: zoomInOut_01 1s ease infinite;
+}
+/* End Preloader */
+
 /* Navbar */
 .navbar {
   background-color: transparent;
@@ -258,7 +304,7 @@ ul {
 
 .home {
   min-height: 100px;
-  padding: 130px 0;
+  padding: 150px 0;
   background-color: var(--main-to-dark-color);
   border-radius: 0 0 100px 100px;
   position: relative;
@@ -331,7 +377,7 @@ ul {
   transform: translate(-50%, -50%);
 }
 
-.home-img .circle::before {
+/* .home-img .circle::before {
   content: "";
   position: absolute;
   height: 60px;
@@ -342,7 +388,7 @@ ul {
   top: 10px;
   transform-origin: 90px 200px;
   animation: spin_01 10s linear infinite;
-}
+} */
 
 /* Video PopUp Section */
 .video-popup {
@@ -413,8 +459,6 @@ ul {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  width: 355px;
-  height: 341px;
 }
 
 .obligations .obligation-item::before,
@@ -983,6 +1027,27 @@ ul {
 }
 /* End Footer */
 
+/* Toogle Theme - Button theme light and dark theme */
+.toggle-theme {
+  position: fixed;
+  right: 0;
+  top: calc(50% - 20px);
+  height: 40px;
+  width: 40px;
+  background-color: var(--dark-to-main-color);
+  z-index: 1200;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: var(--shadow-black-300);
+  font-size: 16px;
+  text-align: center;
+}
+
+.toggle-theme i {
+  line-height: 40px;
+}
+
 /* Media Query -- Responsive */
 @media (max-width: 991px) {
   .navbar-toggler {
@@ -1026,6 +1091,7 @@ ul {
     font-size: 40px;
   }
 
+  .pricing-plan,
   .history-gba-item,
   .app-download-item {
     margin-bottom: 30px;
@@ -1039,6 +1105,10 @@ ul {
     box-shadow: var(--shadow-black-100);
     border-radius: 10px;
   }
+
+  .footer-col {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1049,6 +1119,18 @@ ul {
   .activity-img {
     margin-bottom: 20px;
   }
+
+  .contact-form {
+    margin-top: 20px;
+  }
+
+  .section-title h2 {
+    font-size: 35px;
+  }
+
+  .activity .section-title h2 {
+    text-align: center;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1056,8 +1138,11 @@ ul {
     font-size: 30px;
   }
 
-  .obligations .obligation-item {
-    box-shadow: var(--shadow-black-100);
-    margin: 20px;
+  .section-title h2 {
+    font-size: 30px;
+  }
+
+  .activity .section-title h2 {
+    text-align: center;
   }
 }
