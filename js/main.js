@@ -36,7 +36,7 @@ $(document).ready(function () {
     autoplay: true,
     autoplayTimeout: 10000,
     autoplayHoverPause: true,
-    margin: 10,
+    margin: 5,
     responsiveClass: true,
     responsive: {
       0: {
