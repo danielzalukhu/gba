@@ -258,7 +258,7 @@ ul {
 
 .home {
   min-height: 100px;
-  padding: 110px;
+  padding: 130px 0;
   background-color: var(--main-to-dark-color);
   border-radius: 0 0 100px 100px;
   position: relative;
@@ -1021,5 +1021,30 @@ ul {
     left: 18px;
     top: 18px;
     transform-origin: 142px 142px;
+  }
+
+  .home-text h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-text {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 575px) {
+  .home-text h1 {
+    font-size: 30px;
+  }
+
+  .home-text p {
+    font-size: 16px;
+  }
+
+  .obligations .obligation-item {
+    box-shadow: var(--shadow-black-100);
+    margin: 20px;
   }
 }
