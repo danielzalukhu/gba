@@ -16,36 +16,36 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <!-- Brand -->
         <a class="navbar-brand" href="index.html">Berea Anugerah</a>
 
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
+          <i class="fas fa-bars"></i>
         </button>
 
         <!-- Navbar links -->
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link active" data-scroll-nav="0" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Visi & Misi</a>
+              <a class="nav-link" data-scroll-nav="1" href="#">Visi & Misi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Acara</a>
+              <a class="nav-link" data-scroll-nav="2" href="#">Acara</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Galeri</a>
+              <a class="nav-link" data-scroll-nav="3" href="#">Galeri</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sejarah</a>
+              <a class="nav-link" data-scroll-nav="4" href="#">Sejarah</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Lokasi</a>
+              <a class="nav-link" data-scroll-nav="5" href="#">Lokasi</a>
             </li>
           </ul>
         </div>
@@ -54,7 +54,7 @@
     <!-- End Navbar -->
 
     <!-- Home Section -->
-    <section class="home d-flex align-items-center">
+    <section class="home d-flex align-items-center" id="home" data-scroll-index="0">
       <div class="effect-wrap">
         <i class="fas fa-plus effect effect-1"></i>
         <i class="fas fa-plus effect effect-2"></i>
@@ -75,7 +75,7 @@
                   <source src="audio/hymn.ogg" type="audio/ogg" />
                   <source src="audio/hymn.mp3" type="audio/mpeg" />
                 </audio>
-                <button onclick="playAudio()" type="button" class="btn btn-1">Hymn Berea</button>
+                <button onclick="playAudio()" type="button" data-scroll-goto="1" class="btn btn-1">Hymn Berea</button>
 
                 <button type="button" class="btn btn-1 video-play-btn">
                   <i class="fas fa-play"></i>
@@ -106,7 +106,7 @@
     <!-- End Video PopUp -->
 
     <!-- 5 Kewajiban Orang Kudus -->
-    <section class="obligations section-padding">
+    <section class="obligations section-padding" id="obligation" data-scroll-index="1">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -149,7 +149,7 @@
     <!-- End Kewajiban Orang Kudus -->
 
     <!-- Spiritual Activities -->
-    <section class="activity section-padding">
+    <section class="activity section-padding" id="activities" data-scroll-index="2">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-5 d-flex align-items-center justify-content-center">
@@ -197,7 +197,7 @@
     <!-- End Spiritual Activities -->
 
     <!-- Galeri -->
-    <section class="galleries section-padding">
+    <section class="galleries section-padding" id="gallery" data-scroll-index="3">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -230,7 +230,7 @@
     <!-- End Galeri -->
 
     <!-- Download App Section -->
-    <section class="app-download section-padding">
+    <section class="app-download section-padding" id="download" data-scroll-index="4">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -270,7 +270,7 @@
     <!-- End Download App Section -->
 
     <!-- History GBA -->
-    <section class="history-gba section-padding">
+    <section class="history-gba section-padding" id="history" data-scroll-index="5">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -314,7 +314,7 @@
     <!-- End History GBA -->
 
     <!-- Profil Pengerja Carousel-->
-    <section class="profile-pengerja section-padding">
+    <section class="profile-pengerja section-padding" id="profile" data-scroll-index="6">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -376,7 +376,7 @@
             <div class="profile-pengerja-item">
               <div class="img-box">
                 <img src="img/testimonial/4.jpg" alt="" />
-                <i class="fas fa-quote-right"></i>
+                <i class="fas fa-map-marker-alt"></i>
               </div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aliquid?</p>
               <h3>Bali</h3>
@@ -396,7 +396,7 @@
     <!-- End Profil Pengerja -->
 
     <!-- Pricing Section -->
-    <section class="pricing section-padding">
+    <section class="pricing section-padding" id="pricing" data-scroll-index="7">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -484,7 +484,7 @@
     <!-- End Pricing Section -->
 
     <!-- Gereja Cabang Card-Box -->
-    <section class="organization-structure section-padding">
+    <section class="organization-structure section-padding" id="branch" data-scroll-index="8">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -526,12 +526,68 @@
     </section>
     <!-- End Gereja Cabang Card-Box -->
 
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-col">
+              <h3>Berea Anugerah</h3>
+              <p>Tempat Logo Berea Anugerah</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-col">
+              <h3>Quick Link</h3>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#activities">Kegiatan</a></li>
+                <li><a href="#branch">Cabang Gereja</a></li>
+                <li><a href="#profile">Profil Pengerja</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-col">
+              <h3>Sosial Media</h3>
+              <ul>
+                <li><a href="">Youtube</a></li>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Zoom</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-col">
+              <h3>Kontak</h3>
+              <ul>
+                <li><a href="">Telepon</a></li>
+                <li><a href="">Alamat</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <h5 class="copyright-text">&copy; 2021 All Rights Reserved by <span>Daniel Zalukhu.</span></h5>
+          </div>
+          <div class="col-lg-12">
+            <p class="copyright-text-2">Dedicate for Berea Anugerah.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
     <!-- JQuery JS -->
     <script src="js/jquery.min.js"></script>
     <!-- Popper JS -->
     <script src="js/popper.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- ScrollIt JS -->
+    <script src="js/scrollIt.min.js"></script>
     <!-- OwlCarousel JS -->
     <script src="js/owl.carousel.min.js"></script>
     <!-- Main JS -->

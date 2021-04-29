@@ -117,4 +117,16 @@ $(document).ready(function () {
     },
   });
   /* End Structure Organization */
+
+  /* Pages Scrolling */
+  $.scrollIt({
+    topOffSet: -60,
+  });
+  /* End Pages Scrolling */
+
+  /* Navbar Collapse */
+  $(".nav-link").on("click", function () {
+    $(".navbar-collapse").collapse("hide");
+  });
+  /* End Navbar Collapse */
 });
