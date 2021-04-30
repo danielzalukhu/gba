@@ -5,6 +5,12 @@ function playAudio() {
 }
 
 $(document).ready(function () {
+  /* Pre-loader */
+  $(window).on("load", function () {
+    $(".preloader").fadeOut("slow");
+  });
+  /* End Pre-loader */
+
   /* Navbar Shrink */
   $(window).on("scroll", function () {
     if ($(this).scrollTop() > 90) {

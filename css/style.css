@@ -309,6 +309,7 @@ ul {
   border-radius: 0 0 100px 100px;
   position: relative;
   z-index: 1;
+  overflow-x: hidden;
 }
 
 .home-text h1 {
