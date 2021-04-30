@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Siapakah Iblis Itu",
+    "description": "Komsel selasa",
+    "img": "url/asset/img1.jpg",
+    "duration": 12,
+    "play-at": "datetime",
+    "exp-at": "datetime"
+  }
+]

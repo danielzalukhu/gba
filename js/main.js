@@ -81,7 +81,7 @@ $(document).ready(function () {
   /* End Gallery Photos Section - Carousel Script */
 
   /* Profil Pengerja-1 */
-  $(".profile-pengerja-carousel").owlCarousel({
+  $(".church-branch-carousel").owlCarousel({
     loop: true,
     autoplay: true,
     autoplayTimeout: 5000,
@@ -121,6 +121,10 @@ $(document).ready(function () {
         items: 3,
       },
     },
+  });
+
+  $(".organization-structure-item").on("click", function () {
+    alert("Detail Pengerja Sbb:");
   });
   /* End Structure Organization */
 

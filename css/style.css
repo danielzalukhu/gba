@@ -329,7 +329,7 @@ ul {
 }
 
 .home-text p span {
-  color: #000000;
+  color: var(--color-2);
   font-weight: bold;
   font-style: italic;
 }
@@ -460,6 +460,8 @@ ul {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  width: auto;
+  height: 500px;
 }
 
 .obligations .obligation-item::before,
@@ -552,6 +554,7 @@ ul {
   font-weight: 300;
   color: var(--black-400);
   margin: 0 0 15px;
+  text-align: justify;
 }
 /* End Obligation Section-Padding */
 
@@ -582,6 +585,7 @@ ul {
   color: var(--black-400);
   margin: 0 0 15px;
   font-weight: 300;
+  text-align: justify;
 }
 
 .activity-item {
@@ -668,9 +672,10 @@ ul {
 }
 /* End Gallery Photos */
 
-/* Download App Section */
-.app-download {
-  background-image: url("../img/download-app-bg.jpg");
+/* Theme-Banner Section */
+.theme-banner {
+  background: url("../img/cwmc.jpg");
+  background-size: cover;
   background-position: center-top;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -678,11 +683,7 @@ ul {
   z-index: 1;
 }
 
-.app-download .section-title h2 {
-  color: #ffffff;
-}
-
-.app-download::before {
+.theme-banner::before {
   content: "";
   position: absolute;
   left: 0;
@@ -690,41 +691,22 @@ ul {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: var(--main-to-dark-color);
-  opacity: 0.6;
+  /* background-color: var(--main-to-dark-color); */
+  opacity: 0.8;
 }
 
-.app-download-item {
-  background-color: var(--black-000);
-  padding: 30px;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: var(--shadow-black-100);
-}
-
-.app-download-item i {
-  font-size: 30px;
-  color: var(--main-color);
-  display: inline-block;
-}
-
-.app-download-item h3 {
-  font-size: 22px;
-  color: var(--black-900);
-  margin: 20px 0;
-  text-transform: capitalize;
-  font-weight: 500;
-}
-
-.app-download-item p {
-  font-size: 16px;
+.theme-banner p {
+  font-size: 35px;
   color: var(--black-400);
   font-weight: 300;
-  margin: 0 0 30px;
+  margin: 30px;
   line-height: 26px;
+  color: #000000;
+  letter-spacing: 2px;
+  text-transform: capitalize;
 }
 
-/* End Download App Section */
+/* End Theme-Banner Section */
 
 /* History Section */
 .history-gba-item {
@@ -735,7 +717,8 @@ ul {
 }
 
 .history-gba-item.line-right::before {
-  content: "";
+  content: " ";
+  white-space: pre;
   position: absolute;
   height: 5px;
   width: 100%;
@@ -777,11 +760,11 @@ ul {
 /* End History Sections */
 
 /* Profil Pengerja */
-.profile-pengerja {
+.church-branch {
   background-color: var(--black-100);
 }
 
-.profile-pengerja-item {
+.church-branch-item {
   margin: 15px;
   padding: 30px;
   box-shadow: var(--shadow-black-100);
@@ -790,7 +773,7 @@ ul {
   position: relative;
 }
 
-.profile-pengerja-item .img-box {
+.church-branch-item .img-box {
   height: 200px;
   width: 200px;
   display: inline-block;
@@ -799,12 +782,12 @@ ul {
   border-radius: 10%;
 }
 
-.profile-pengerja-item .img-box img {
+.church-branch-item .img-box img {
   border-radius: 10%;
   width: 100%;
 }
 
-.profile-pengerja-item .img-box i {
+.church-branch-item .img-box i {
   position: absolute;
   height: 30px;
   width: 30px;
@@ -818,7 +801,7 @@ ul {
   bottom: calc(100% - 20px);
 }
 
-.profile-pengerja-item p {
+.church-branch-item p {
   font-size: 16px;
   margin: 0 0 20px;
   color: var(--black-400);
@@ -826,7 +809,7 @@ ul {
   font-weight: 300;
 }
 
-.profile-pengerja-item h3 {
+.church-branch-item h3 {
   font-size: 22px;
   color: var(--black-900);
   font-weight: 500;
@@ -834,106 +817,24 @@ ul {
   text-transform: capitalize;
 }
 
-.profile-pengerja-item span {
+.church-branch-item span {
   display: block;
   font-size: 16px;
   color: var(--black-400);
   font-weight: 300;
 }
 
-.profile-pengerja-item .rating {
+.church-branch-item .rating {
   margin-top: 10px;
 }
 
-.profile-pengerja-item .rating i {
+.church-branch-item .rating i {
   display: inline-block;
   font-size: 16px;
   color: var(--color-2);
 }
 
 /* End Profil Pengerja */
-
-/* Pricing CSS Section */
-.pricing-plan {
-  box-shadow: var(--shadow-black-100);
-  border-radius: 10px;
-}
-
-.pricing-plan .pricing-header {
-  padding: 20px 30px;
-  border-bottom: 1px solid var(--black-alpha-100);
-}
-
-.pricing-plan .pricing-header h3 {
-  text-align: center;
-  font-size: 30px;
-  color: var(--black-900);
-  font-weight: 500;
-  text-transform: capitalize;
-  margin: 0;
-}
-
-.pricing-plan .pricing-price {
-  padding: 40px 30px;
-  display: flex;
-  justify-content: center;
-  line-height: 0.7;
-}
-
-.pricing-plan .pricing-price .currency {
-  font-size: 16px;
-  font-weight: 300;
-  color: var(--black-400);
-  margin-right: 5px;
-  align-self: flex-start;
-}
-
-.pricing-plan .pricing-price .price {
-  font-size: 80px;
-  font-weight: 700;
-  color: var(--main-color);
-}
-
-.pricing-plan .pricing-price .period {
-  font-size: 14px;
-  font-weight: 300;
-  color: var(--black-400);
-  margin-right: 5px;
-  align-self: flex-end;
-  text-transform: uppercase;
-}
-
-.pricing-plan .pricing-body {
-  padding: 0px 30px;
-}
-
-.pricing-plan .pricing-body ul li {
-  font-size: 16px;
-  font-weight: 300;
-  color: var(--black-400);
-  padding: 10px 0 10px 30px;
-  border-bottom: 1px solid var(--black-alpha-100);
-  line-height: 26px;
-  position: relative;
-}
-
-.pricing-plan .pricing-body ul li:last-child {
-  border-bottom: none;
-}
-
-.pricing-plan .pricing-body ul li i {
-  color: var(--main-color);
-  position: absolute;
-  top: 12px;
-  left: 0;
-}
-
-.pricing-plan .pricing-footer {
-  padding: 20px 30px 30px;
-  text-align: center;
-}
-
-/* End Pricing CSS Section */
 
 /* Structure Organization CSS */
 .organization-structure {
@@ -1092,9 +993,8 @@ ul {
     font-size: 40px;
   }
 
-  .pricing-plan,
   .history-gba-item,
-  .app-download-item {
+  .theme-banner-item {
     margin-bottom: 30px;
   }
 
